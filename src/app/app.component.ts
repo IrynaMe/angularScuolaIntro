@@ -2,15 +2,15 @@ import { Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
 import { CardComponent } from './card/card.component';
-import { CategoriaUtente } from './categoria-utente';
-import { GetCategorieService } from './get-categorie.service';
+
 import { NgFor } from '@angular/common';
 import { NavbarCategorieComponent } from './navbar-categorie/navbar-categorie.component';
+import { HomePageComponent } from './home-page/home-page.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent, NavbarCategorieComponent, CardComponent, NgFor],
+  imports: [RouterOutlet,  NavbarCategorieComponent,  NgFor],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
@@ -21,6 +21,7 @@ export class AppComponent {
   navItem3 = 'Scuola superiore';
   navLogoPath='logo.png';
   navLink1="scuolaElementare";
+  //homePic="school4.png";
   
 
 
