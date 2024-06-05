@@ -6,11 +6,12 @@ import { CardComponent } from './card/card.component';
 import { NgFor } from '@angular/common';
 import { NavbarCategorieComponent } from './navbar-categorie/navbar-categorie.component';
 import { HomePageComponent } from './home-page/home-page.component';
+import { FooterComponent } from './footer/footer.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,  NavbarCategorieComponent,  NgFor],
+  imports: [RouterOutlet,  NavbarCategorieComponent,  NgFor, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
@@ -21,9 +22,17 @@ export class AppComponent {
   navItem3 = 'Scuola superiore';
   navLogoPath='logo.png';
   navLink1="scuolaElementare";
-  //homePic="school4.png";
+  navLink2="scuolaMedia";
+  navLink3="scuolaSuperiore";
   
+  textFooter = '@ Mia Scuola 2024';
+  logoMainFooter= 'logo.png';
+  iconFooter1="iconFacebook.png";
+  iconFooter2="iconInstagram.png";
+  contactFooter1="tel.: 06 7894564";
 
+
+  //homePic="school4.png";
 
   /*  commento = 'Stiamo per iniziare a lavorare con angular';
    navText = 'Mio negozio di scarpe';

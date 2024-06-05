@@ -1,18 +1,17 @@
-import { NgFor } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { CategoriaUtente } from '../categoria-utente';
 import { GetCategorieService } from '../get-categorie.service';
+import { NgFor } from '@angular/common';
 import { CardComponent } from '../card/card.component';
 
-
 @Component({
-  selector: 'app-scuola-elementare',
+  selector: 'app-scuola-superiore',
   standalone: true,
-  imports: [NgFor, CardComponent],
-  templateUrl: './scuola-elementare.component.html',
-  styleUrl: './scuola-elementare.component.css'
+  imports: [NgFor,CardComponent],
+  templateUrl: './scuola-superiore.component.html',
+  styleUrl: './scuola-superiore.component.css'
 })
-export class ScuolaElementareComponent {
+export class ScuolaSuperioreComponent {
   cardButtonText = 'Accedi';
  
   
@@ -20,7 +19,7 @@ export class ScuolaElementareComponent {
   GetCategorieServiceInst: GetCategorieService = inject(GetCategorieService);
   constructor() { 
 
-    this.GetCategorieServiceInst.getAllCategorie(0).then(
+    this.GetCategorieServiceInst.getAllCategorie(2).then(
     (ListaCategorie: CategoriaUtente[]) => { 
     this.ListaCategorie = ListaCategorie; 
     //Add here your code
