@@ -23,11 +23,11 @@ export class AppComponent {
   navLogoPath='logo.png';
   navLink1="scuolaElementare";
   
-  textFooter = '@ All rights reserved 2024';
+  textFooter = '@ Mia Scuola 2024';
   logoMainFooter= 'logo.png';
   iconFooter1="iconFacebook.png";
   iconFooter2="iconInstagram.png";
-  contactFooter1="06 7894564";
+  contactFooter1="tel.: 06 7894564";
 
 
   //homePic="school4.png";

@@ -5,41 +5,19 @@ import { CategoriaUtente } from './categoria-utente';
   providedIn: 'root'
 })
 export class GetCategorieService {
-  elencoCategorie:CategoriaUtente[]=[
-    {
-      id:1,
-      nomeCat:"Docenti",
-      descrCat:"Sezione dedicata agli insegnanti per la gestione del loro classi",
-      photo: "teacher.png",
-      linkCat:"pagInsegnate.html"
-    },
-    {
-      id:2,
-      nomeCat:"Alunni",
-      descrCat:"Sezione dedicata agli alunni per prenotazione prove e visualizzazione voti",
-      photo: "backpack.png",
-      linkCat:"pagAlunno.html"
-    },
-    {
-      id:3,
-      nomeCat:"Amministrativi",
-      descrCat:"Sezione dedicata agli amministrativi per la gestione delle classi",
-      photo: "folder.png",
-      linkCat:"pagAmmin.html"
-    },
-    {
-      id:4,
-      nomeCat:"Famiglie",
-      descrCat:"Sezione dedicata agli famiglie per la gestione dello studio degli alunni",
-      photo: "home.png",
-      linkCat:"pagFamiglie.html"
-    }
-    
-  ]
+  url="http://localhost:8080/scuola/";
+  elencoCategorie:CategoriaUtente[]=[];
 
   constructor() { }
   
-  getAllCategorie():CategoriaUtente[]{
+  getAllCategorieOld():CategoriaUtente[]{
     return this.elencoCategorie;
   }
+
+  async getAllCategorie(num:any): Promise<CategoriaUtente[]> { 
+    //esecuzione
+    const data = await fetch(this.url+num); 
+    return await data.json() ?? []; 
+    }
+    
 }

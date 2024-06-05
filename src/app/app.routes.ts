@@ -4,6 +4,7 @@ import { Routes } from '@angular/router';
 //import { AppComponent } from './app.component';
 import { ScuolaElementareComponent } from './scuola-elementare/scuola-elementare.component';
 import { HomePageComponent } from './home-page/home-page.component';
+import { ScuolaMediaComponent } from './scuola-media/scuola-media.component';
 
 export const routes: Routes = [
     {
@@ -14,6 +15,11 @@ export const routes: Routes = [
     {
       path: 'scuolaElementare',
       component: ScuolaElementareComponent
+     // title: 'Home details'
+    },
+    {
+      path: 'scuolaMedia',
+      component: ScuolaMediaComponent
      // title: 'Home details'
     }
 

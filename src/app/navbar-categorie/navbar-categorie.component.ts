@@ -14,6 +14,7 @@ export class NavbarCategorieComponent {
   @Input() appNavItem3: string = '';
   @Input() appNavLogoPath: string = '';
   @Input() appNavLink1: string = '';
+  @Input() appNavLink2: string = '';
 
   navTitle = '';
   navItem1 = '';
@@ -21,6 +22,7 @@ export class NavbarCategorieComponent {
   navItem3 = '';
   navLogoPath='';
   navLink1='';
+  navLink2='';
 
 
   constructor() {
@@ -34,5 +36,6 @@ export class NavbarCategorieComponent {
     if (this.appNavItem3) this.navItem3 = this.appNavItem3;
     if(this.appNavLogoPath) this.navLogoPath=this.appNavLogoPath;
     if(this.appNavLink1) this.navLink1=this.appNavLink1;
+    if(this.appNavLink2) this.navLink1=this.appNavLink2;
   }
 }
