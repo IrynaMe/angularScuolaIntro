@@ -18,7 +18,6 @@ export class ScuolaMediaComponent {
   ListaCategorie: CategoriaUtente[] = [];
   GetCategorieServiceInst: GetCategorieService = inject(GetCategorieService);
   constructor() { 
-    
 
     this.GetCategorieServiceInst.getAllCategorie(1).then(
     (ListaCategorie: CategoriaUtente[]) => { 
