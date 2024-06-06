@@ -1,3 +1,11 @@
 .footer-custom .text-white{
     color: white !important;
+     flex-shrink: 0;
 }
+
+
+.content-wrapper {
+    flex: 1;
+  }
+  
+ 

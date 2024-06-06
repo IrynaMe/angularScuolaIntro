@@ -13,7 +13,7 @@ import { CardComponent } from '../card/card.component';
 })
 export class ScuolaSuperioreComponent {
   cardButtonText = 'Accedi';
- 
+  serverErrorMsg="Attenzione: Server non è disponibile";
   
   ListaCategorie: CategoriaUtente[] = [];
   GetCategorieServiceInst: GetCategorieService = inject(GetCategorieService);

@@ -1,5 +1,5 @@
 import { NgFor, NgIf } from '@angular/common';
-import { Component, inject } from '@angular/core';
+import { Component, Input, OnInit, inject } from '@angular/core';
 import { CategoriaUtente } from '../categoria-utente';
 import { GetCategorieService } from '../get-categorie.service';
 import { CardComponent } from '../card/card.component';
@@ -13,7 +13,9 @@ import { CardComponent } from '../card/card.component';
   styleUrl: './scuola-elementare.component.css'
 })
 export class ScuolaElementareComponent {
+
   cardButtonText = 'Accedi';
+  serverErrorMsg="Attenzione: Server non è disponibile";
  
   
   ListaCategorie: CategoriaUtente[] = [];
@@ -37,5 +39,4 @@ export class ScuolaElementareComponent {
           this.ListaCategorie = [];
         });
     }
-
-}
+  }

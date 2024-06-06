@@ -11,4 +11,4 @@
       > </app-card>
     </div>
 </div>
-<div class="row p-4" *ngIf="ListaCategorie.length==0"> <h1> Attenzione server non disponibile</h1>  </div>
+<div class="row text-center text-danger p-4" *ngIf="ListaCategorie.length==0"> <h2> {{serverErrorMsg}}</h2>  </div>

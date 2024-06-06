@@ -13,7 +13,7 @@ import { GetCategorieService } from '../get-categorie.service';
 })
 export class ScuolaMediaComponent {
   cardButtonText = 'Accedi';
- 
+  serverErrorMsg="Attenzione: Server non è disponibile";
   
   ListaCategorie: CategoriaUtente[] = [];
   GetCategorieServiceInst: GetCategorieService = inject(GetCategorieService);

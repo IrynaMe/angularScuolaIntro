@@ -1,21 +1,15 @@
-
 <div class="row row-cols-1 row-cols-md-4 g-4 p-4">
-   
-    <div  class="col" *ngFor="let categoria of ListaCategorie">
-      
-      <app-card 
+  <div class="col" *ngFor="let categoria of ListaCategorie">
+    <app-card
       [appCardTitle]="categoria.nomeCat"
       [appCardText]="categoria.descrCat"
       [appCardLink]="categoria.linkCat"
       [appCardPicPath]="categoria.photo"
       [appCardButtonText]="cardButtonText"
-      
-      > </app-card>
-    </div>
- 
+    >
+    </app-card>
+  </div>
 </div>
-   <div class="row p-4" *ngIf="ListaCategorie.length==0"> <h1> Attenzione server non disponibile</h1>  </div>
-
-
-
-  
+<div class="row text-center text-danger p-4" *ngIf="ListaCategorie.length == 0">
+  <h2>{{ serverErrorMsg }}</h2>
+</div>

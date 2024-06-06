@@ -32,46 +32,7 @@ export class AppComponent {
   contactFooter1="tel.: 06 7894564";
 
 
-  //homePic="school4.png";
 
-  /*  commento = 'Stiamo per iniziare a lavorare con angular';
-   navText = 'Mio negozio di scarpe';
-   navColor = 'blue';
-   navTextColor = 'white';
-   navLogoPath = 'logo1.jpg';
- 
-   cardButtonText = 'Accedi';
- 
-   cardTitle = 'Docenti';
-   cardText = 'Inserimento voti, stampa classe del docente';
-   cardButtonText = 'Accedi';
-   cardLink = 'https://getbootstrap.com/docs/5.0/components/card/';
-   cardPicPath = 'teacher1.jpg';
- 
-   cardTitle2 = 'Alunni';
-   cardText2 = 'Vedere voti';
-   cardButtonText2 = 'Accedi';
-   cardLink2 = 'https://getbootstrap.com/docs/5.0/components/card/';
-   cardPicPath2 = 'student.jpg';
-   
-   cardTitle3 = 'Amministrativi';
-   cardText3 = 'Inserimento docente, alunno';
-   cardButtonText3 = 'Accedi';
-   cardLink3 = 'https://getbootstrap.com/docs/5.0/components/card/';
-   cardPicPath3 = 'secretary.jpg';
- 
-   cardTitle4 = 'Amministrativi';
-   cardText4 = 'Inserimento docente, alunno';
-   cardButtonText4 = 'Accedi';
-   cardLink4 = 'https://getbootstrap.com/docs/5.0/components/card/';
-   cardPicPath4 = 'secretary.jpg'; */
-
-  /* listaCategorie: CategoriaUtente[] = [];
-  GetCategorieServiceInst: GetCategorieService = inject(GetCategorieService);
-  constructor() {
-    this.listaCategorie = this.GetCategorieServiceInst.getAllCategorie();
-  }
- */
 
 }
 

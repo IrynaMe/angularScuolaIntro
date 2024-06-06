@@ -1,93 +1,22 @@
-
-<div>
-<app-navbar-categorie
-[appTitle]="navTitle" 
-
-[appNavItem1]="navItem1"
-[appNavItem2]="navItem2"
-[appNavItem3]="navItem3"
-[appNavLogoPath]="navLogoPath"
-[appNavLink1]="navLink1"
-[appNavLink2]="navLink2"
-[appNavLink3]="navLink3"
->
-
-</app-navbar-categorie>
-
-
-<router-outlet />
-
-<app-footer [appFooterText]="textFooter"
-[appFooterLogoMain]="logoMainFooter"
-[appFooterIcon1]="iconFooter1"
-[appFooterIcon2]="iconFooter2"
-[appFooterContact1]="contactFooter1"
->
-
-</app-footer>
-</div>
-<!-- 
-<app-navbar 
-  [sTitoloRicevuto]="navTitle" 
-  [sColoreNavbar]="navColor" 
-  [sTextColorNav]="navTextColor" 
-  [sLogoPath]="navLogoPath"
- 
-  >
+<div class="custom-wrapper">
+    <app-navbar-categorie
+      [appTitle]="navTitle" 
+      [appNavItem1]="navItem1"
+      [appNavItem2]="navItem2"
+      [appNavItem3]="navItem3"
+      [appNavLogoPath]="navLogoPath"
+      [appNavLink1]="navLink1"
+      [appNavLink2]="navLink2"
+      [appNavLink3]="navLink3"
+    ></app-navbar-categorie>
   
-</app-navbar> -->
-
-<!-- <div class="row row-cols-1 row-cols-md-4 g-4">
-  <div class="col" *ngFor="let categoria of listaCategorie">
-    
-    <app-card 
-    [appCardTitle]="categoria.nomeCat"
-    [appCardText]="categoria.descrCat"
-    [appCardLink]="categoria.linkCat"
-    [appCardPicPath]="categoria.photo"
-    [appCardButtonText]="cardButtonText"
-    
-    > </app-card>
-  </div> -->
-
-<!--   <div class="col">
-    <app-card 
-    [appCardTitle]="listaCategorie[1].nomeCat"
-    [appCardText]="listaCategorie[1].descrCat"
-    [appCardLink]="cardLink2"
-    [appCardPicPath]="cardPicPath2"
-    [appCardButtonText]="cardButtonText2"
-    
-    > </app-card>
+    <router-outlet></router-outlet>
   </div>
-  <div class="col">
-    <app-card 
-    [appCardTitle]="listaCategorie[2].nomeCat"
-    [appCardText]="listaCategorie[2].descrCat"
-    [appCardLink]="cardLink3"
-    [appCardPicPath]="cardPicPath3"
-    [appCardButtonText]="cardButtonText3"
-    
-    > </app-card>
-  </div>
-  <div class="col">
-    <app-card 
-    [appCardTitle]="listaCategorie[3].nomeCat"
-    [appCardText]="listaCategorie[3].descrCat"
-    [appCardLink]="cardLink4"
-    [appCardPicPath]="cardPicPath4"
-    [appCardButtonText]="cardButtonText4"
-    
-    > </app-card>
-  </div> -->
-
-<!-- <app-card
-[appCardTitle]="cardTitle"
-[appCardText]="cardText"
-[appCardLink]="cardLink"
-[appCardPicPath]="cardPicPath"
-[appCardButtonText]="cardButtonText"
-
-> </app-card> -->
-
-
+  
+  <app-footer
+    [appFooterText]="textFooter"
+    [appFooterLogoMain]="logoMainFooter"
+    [appFooterIcon1]="iconFooter1"
+    [appFooterIcon2]="iconFooter2"
+    [appFooterContact1]="contactFooter1"
+  ></app-footer>
