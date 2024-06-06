@@ -5,6 +5,10 @@ import { Routes } from '@angular/router';
 import { ScuolaElementareComponent } from './scuola-elementare/scuola-elementare.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { ScuolaMediaComponent } from './scuola-media/scuola-media.component';
+<<<<<<< HEAD
+=======
+import { ScuolaSuperioreComponent } from './scuola-superiore/scuola-superiore.component';
+>>>>>>> 5025b811764a707995cb72b4ab82e381a0a15081
 
 export const routes: Routes = [
     {
@@ -21,6 +25,15 @@ export const routes: Routes = [
       path: 'scuolaMedia',
       component: ScuolaMediaComponent
      // title: 'Home details'
+<<<<<<< HEAD
     }
 
+=======
+    },
+    {
+      path: 'scuolaSuperiore',
+      component: ScuolaSuperioreComponent
+     // title: 'Home details'
+    }
+>>>>>>> 5025b811764a707995cb72b4ab82e381a0a15081
   ];

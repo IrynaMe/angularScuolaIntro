@@ -20,6 +20,7 @@ export class AppComponent {
   navItem1 = 'Scuola elementare';
   navItem2 = 'Scuola media';
   navItem3 = 'Scuola superiore';
+<<<<<<< HEAD
   navLogoPath='logo.png';
   navLink1="scuolaElementare";
   
@@ -27,6 +28,17 @@ export class AppComponent {
   logoMainFooter= 'logo.png';
   iconFooter1="iconFacebook.png";
   iconFooter2="iconInstagram.png";
+=======
+  navLogoPath='logo3.png';
+  navLink1="scuolaElementare";
+  navLink2="scuolaMedia";
+  navLink3="scuolaSuperiore";
+  
+  textFooter = '@ Mia Scuola 2024';
+  logoMainFooter= 'logo3.png';
+  iconFooter1="iconYoutube.png";
+  iconFooter2="iconInsta.png";
+>>>>>>> 5025b811764a707995cb72b4ab82e381a0a15081
   contactFooter1="tel.: 06 7894564";
 
 
