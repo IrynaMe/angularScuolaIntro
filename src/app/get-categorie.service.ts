@@ -14,10 +14,24 @@ export class GetCategorieService {
     return this.elencoCategorie;
   }
 
-  async getAllCategorie(num:any): Promise<CategoriaUtente[]> { 
+/*   async getAllCategorie(num:any): Promise<CategoriaUtente[]> { 
     //esecuzione
     const data = await fetch(this.url+num); 
     return await data.json() ?? []; 
     }
-    
-}
+     */
+
+
+
+    async getAllCategorie(num: number): Promise<CategoriaUtente[]> {
+      const data = await fetch(this.url + num);
+      const jsonData = await data.json();
+      if (jsonData) {
+        return jsonData;
+      } else {
+        return []; 
+      }
+    }
+
+    }
+
