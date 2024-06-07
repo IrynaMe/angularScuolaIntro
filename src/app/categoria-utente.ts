@@ -4,5 +4,6 @@ export interface CategoriaUtente {
     descrCat: string;
     photo: string;
     linkCat:string;
+    
    
 }
