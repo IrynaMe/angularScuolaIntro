@@ -1,5 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { CategoriaUtente } from '../categoria-utente';
+import { GetCategorieService } from '../get-categorie.service';
 
 @Component({
   selector: 'app-loginform',
@@ -11,9 +13,15 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class LoginformComponent {
   route: ActivatedRoute=inject(ActivatedRoute);
   idInserito: number=-1;
+  miaCategoria: CategoriaUtente | undefined;
+  GetCategorieServiceInst: GetCategorieService = inject(GetCategorieService);
 
   constructor(private router: Router){
     this.idInserito=this.route.snapshot.params['appId'];
+    this.miaCategoria=this.GetCategorieServiceInst.getCategoriaById(this.idInserito);
+
+    }
   }
 
-}
+
+
