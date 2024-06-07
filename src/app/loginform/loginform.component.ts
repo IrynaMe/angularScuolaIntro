@@ -13,7 +13,7 @@ export class LoginformComponent {
   idInserito: number=-1;
 
   constructor(private router: Router){
-    this.idInserito=this.route.snapshot.params['id'];
+    this.idInserito=this.route.snapshot.params['appId'];
   }
 
 }

@@ -4,6 +4,7 @@
     <h5 class="card-title">{{ title }}</h5>
     <p class="card-text" style="height: 40%">{{ text }}</p>
 
-    <a [routerLink]="['linkLogin',appId]" routerLinkActive="router-link-active" class="btn btn-primary">{{ buttonText }}</a>
+   <a [routerLink]="[linkLogin, appId]" routerLinkActive="router-link-active" class="btn btn-primary">{{ buttonText }}</a> 
+   <!-- <a href={{linkLogin}} routerLinkActive="router-link-active" class="btn btn-primary">{{ buttonText }}</a> -->
   </div>
 </div>

@@ -16,7 +16,7 @@ export class ScuolaElementareComponent {
 
   cardButtonText = 'Accedi';
   serverErrorMsg="Attenzione: Server non è disponibile";
-  loginLink="login";
+  loginLink="../login";
 
  
   
