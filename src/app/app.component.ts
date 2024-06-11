@@ -7,11 +7,12 @@ import { NgFor } from '@angular/common';
 import { NavbarCategorieComponent } from './navbar-categorie/navbar-categorie.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { FooterComponent } from './footer/footer.component';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,  NavbarCategorieComponent,  NgFor, FooterComponent],
+  imports: [RouterOutlet,  NavbarCategorieComponent,  NgFor, FooterComponent,FormsModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
